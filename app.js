@@ -8,10 +8,7 @@ ws.on('open', () => {
     // Subscribe after connection is opened
     const subscriptionMessage = {
         method: 'SUBSCRIBE',
-        params: ['!miniTicker@arr@3000ms', 'btcusdt@aggTrade', 'btcusdt@depth', 'btcusdt@kline_4h',
-            '!miniTicker@arr@3000ms', 'btcusdt@aggTrade', 'btcusdt@depth', 'btcusdt@kline_1h',
-            '!miniTicker@arr@3000ms', 'ethusdt@aggTrade', 'ethusdt@depth', 'btcusdt@kline_1h',
-            '!miniTicker@arr@3000ms', 'ethusdt@aggTrade', 'ethusdt@depth', 'btcusdt@kline_4h',
+        params: ['!miniTicker@arr@3000ms', 'btcusdt@aggTrade', 'btcusdt@depth', 'btcusdt@kline_1s',
         ],
         id: 2
     };
