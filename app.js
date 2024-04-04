@@ -18,7 +18,7 @@ ws.on('open', () => {
 
 ws.on('message', (data) => {
     const message = JSON.parse(data);
-    if (message && message.data && message.data.e == "aggTrade") {
+    if (message && message.data && message.data.e == "kline") {
         console.log(message.data)
     }
 });
